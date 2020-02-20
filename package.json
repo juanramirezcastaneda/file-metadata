@@ -5,6 +5,9 @@
   "main": "server.js",
   "repository": "git@github.com:juanramirezcastaneda/file-metadata.git",
   "author": "juanramirezcastaneda <juanramirezcastaneda@gmail.com>",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "keywords": [
     "mongo",
     "express",
