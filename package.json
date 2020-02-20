@@ -1,0 +1,25 @@
+{
+  "name": "file-metadata",
+  "version": "1.0.0",
+  "description": "upload a file using an express api",
+  "main": "server.js",
+  "repository": "git@github.com:juanramirezcastaneda/file-metadata.git",
+  "author": "juanramirezcastaneda <juanramirezcastaneda@gmail.com>",
+  "keywords": [
+    "mongo",
+    "express",
+    "node",
+    "javascript"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongo-db": "1.0.2",
+    "mongoose": "5.8.11"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2"
+  }
+}
