@@ -26,6 +26,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html')
 });
 
+app.post('/api/fileanalyse', (req, res) => {
+    res.json({ "name": "Transparent_Sign.png", "type": "image/png", "size": 82361 });
+});
+
 // Not found middleware
 app.use((req, res, next) => {
     return next({ status: 404, message: 'not found' })
