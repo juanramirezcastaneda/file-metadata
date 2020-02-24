@@ -16,17 +16,25 @@
   <body>   
     <main>
       <div class="container">
+      
           <div id="file-group">
             <label for="file">Choose a file to upload:</label>
             <input type="file" id="file" name="file" />
           </div>
           <div>
-
-            <button>Upload</button>
+            <button id="upload">Upload</button>
           </div>
           </div>
         </div>
       </div>
     </main>
+    <script>
+      const uploadButton = document.getElementById("upload");
+      const fileButton = document.getElementById("file");
+
+      uploadButton.addEventListener("click", () => {
+        console.log("clicked");
+      });
+    </script>
   </body>
 </html>
