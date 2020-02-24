@@ -15,15 +15,16 @@
 
   <body>   
     <main>
-      <div class="container">
-      
+      <div class="container">      
+        <form method="POST" action="/api/fileanalyse" enctype="multipart/form-data">
           <div id="file-group">
             <label for="file">Choose a file to upload:</label>
             <input type="file" id="file" name="file" />
           </div>
           <div>
-            <button id="upload">Upload</button>
-          </div>
+            <input type="submit" id="upload" value="Upload" />            
+          </div>          
+        </form>
           </div>
         </div>
       </div>
