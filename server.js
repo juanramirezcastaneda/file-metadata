@@ -2,6 +2,7 @@
 
 require('dotenv').config();
 const express = require('express');
+const formidable = require('formidable');
 const app = express();
 const bodyParser = require('body-parser');
 
@@ -27,7 +28,14 @@ app.get('/', (req, res) => {
 });
 
 app.post('/api/fileanalyse', (req, res) => {
-    res.json({ "name": "Transparent_Sign.png", "type": "image/png", "size": 82361 });
+    const form = new formidable.IncomingForm();
+    form.parse(req, (err, _fields, { file }) => {
+        if (err) {
+            res.err(err.message);
+        }
+
+        res.json({ "name": file.name, "type": file.type, "size": file.size });
+    });
 });
 
 // Not found middleware
